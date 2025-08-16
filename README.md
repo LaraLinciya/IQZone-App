@@ -13,9 +13,9 @@ Built with **HTML, CSS, and JavaScript**, the app offers a smooth, responsive, a
 -  **Score Tracking** – See your score immediately after each quiz.  
 
 ---
-
 ## 🚀 Live Demo  
- [Click here to play IQZone](#) *(add your GitHub Pages/Netlify link here)*  
+👉 [Click here to play IQZone](https://laralinciya.github.io/IQZone-App/)
+
 
 ---
 
