@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IQZone — Welcome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hq-header">
+    <div class="brand">
+      
+      <h1>IQZone</h1>
+      <span class="spark">⚡</span>
+    </div>
+    <p class="tagline">Learn smarter. Play faster. Score higher.</p>
+  </header>
+
+  <main class="card-hero">
+    <section class="role-cards">
+      <article class="role-card" onclick="location.href='staff.html'">
+        <div class="role-icon">👩‍🏫</div>
+        <h2>I'm Staff</h2>
+        <p>Create domain quizzes by adding questions, options and answers.</p>
+        <button class="btn">Go to Staff</button>
+      </article>
+      <article class="role-card" onclick="location.href='student.html'">
+        <div class="role-icon">👨‍🎓</div>
+        <h2>I'm Student</h2>
+        <p>Pick a domain and challenge yourself. Get instant scores!</p>
+        <button class="btn">Go to Student</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="hq-footer">© <span id="year"></span> IQZone • Built with HTML/CSS/JS</footer>
+
+  <script src="script.js"></script>
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQZone — Staff</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <a href="index.html" class="brand-mini">IQZone ⚡</a>
+    <div class="crumbs">Role: <strong>Staff</strong></div>
+  </nav>
+
+  <main class="wrap">
+    <section class="panel">
+      <h2>Add a Question</h2>
+      <form id="questionForm" class="q-form">
+        <div class="grid-2">
+          <label class="field">
+            <span>Domain</span>
+            <select id="domain"></select>
+          </label>
+          <label class="field">
+            <span>Correct Answer (1-4)</span>
+            <input type="number" id="answer" min="1" max="4" required />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Question</span>
+          <textarea id="question" rows="2" placeholder="Type your question here" required></textarea>
+        </label>
+
+        <div class="grid-2">
+          <label class="field"><span>Option 1</span><input id="opt1" required /></label>
+          <label class="field"><span>Option 2</span><input id="opt2" required /></label>
+          <label class="field"><span>Option 3</span><input id="opt3" required /></label>
+          <label class="field"><span>Option 4</span><input id="opt4" required /></label>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Add Question</button>
+          <button class="btn ghost" type="button" id="seedBtn">Seed Sample Data</button>
+        </div>
+        <p id="msg" class="toast" aria-live="polite" role="status"></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Current Domains</h2>
+      <div id="domainList" class="chips"></div>
+    </section>
+  </main>
+
+<footer class="hq-footer">
+  <p>Invite your friends 👉 <a href="student.html">Join the Quiz</a></p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+/* Global */
+:root {
+  --bg1:#0a1d44;   /* Navy blue */
+  --bg2:#ed1d24;   /* Red */
+  --accent:#ffffff; /* White (shield star) */
+
+  --ink:#111111;   /* Dark text for light panels */
+  --muted:#555555; /* Softer dark gray text */
+
+  --card:#ffffff;  /* Light card background */
+  --soft:#f7f9fc;  /* Extra soft background */
+}
+
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial;
+  background: linear-gradient(120deg,var(--bg1),var(--bg2));
+  color:var(--ink);
+}
+a{color:inherit;text-decoration:none}
+
+/* Header / Hero */
+.hq-header{ text-align:center; color:#fff; padding:48px 16px; }
+.brand{ display:flex; align-items:center; gap:12px; justify-content:center; }
+.brand h1{ font-weight:800; letter-spacing:0.5px; margin:0; font-size:40px; text-shadow:0 6px 24px rgba(0,0,0,.25)}
+.spark{ font-size:36px; filter: drop-shadow(0 4px 10px rgba(0,0,0,.25)); }
+.tagline{ opacity:.9; margin-top:8px }
+
+.card-hero{ display:flex; justify-content:center; padding:0 16px 56px }
+.role-cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; max-width:900px; width:100% }
+.role-card{
+  background:linear-gradient(180deg,#ffffff, #f3f7ff);
+  border-radius:18px; padding:24px; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,.15);
+  transform: translateY(0); transition: transform .25s ease, box-shadow .25s ease;
+}
+.role-card:hover{ transform: translateY(-6px); box-shadow:0 30px 60px rgba(0,0,0,.22); }
+.role-icon{ font-size:44px; }
+
+/* Layout wrappers */
+.topbar{ display:flex; justify-content:space-between; align-items:center; padding:12px 20px; background:rgba(255,255,255,.2); backdrop-filter: blur(8px); color:#fff }
+.brand-mini{ font-weight:700 }
+.crumbs{ opacity:.95 }
+
+.wrap{ max-width:980px; margin:24px auto; padding:0 16px }
+.panel{
+  background:var(--card); border-radius:16px; padding:24px; margin-bottom:18px; box-shadow:0 14px 40px rgba(0,0,0,.15)
+}
+
+/* Forms */
+.q-form .grid-2{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px }
+.field{ display:flex; flex-direction:column; gap:8px }
+.field input, .field textarea, .field select{
+  border:1px solid #e0e7ff; border-radius:10px; padding:10px 12px; font-size:15px; background:var(--soft);
+}
+.actions{ display:flex; gap:12px; align-items:center; margin-top:10px }
+.btn{ background:#1d4ed8; border:none; color:#fff; padding:10px 16px; border-radius:10px; font-weight:600; cursor:pointer; box-shadow:0 8px 16px rgba(37,117,252,.25); transition:.2s }
+.btn:hover{ transform: translateY(-1px); box-shadow:0 12px 24px rgba(37,117,252,.35) }
+.btn.ghost{ background:transparent; color:#1d4ed8; border:2px solid #1d4ed8 }
+
+.toast{ margin-top:8px; color:#0a7e33; font-weight:600; min-height:22px }
+
+/* Chips (Domains list) */
+.chips{ display:flex; flex-wrap:wrap; gap:8px }
+.chips .chip{ background:#eef2ff; border:1px solid #c7d2fe; color:#3730a3; border-radius:999px; padding:6px 10px; font-size:13px }
+
+/* Cards (Student domain selection) */
+.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px }
+.card{
+  background:linear-gradient(180deg,#ffffff,#eef6ff);
+  border-radius:16px; padding:18px; cursor:pointer; box-shadow:0 12px 30px rgba(0,0,0,.1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card h3{ margin:8px 0 6px }
+.card small{ color:var(--muted) }
+.card:hover{ transform:scale(1.03); box-shadow:0 18px 40px rgba(0,0,0,.15) }
+
+/* Quiz */
+.quiz-head{ display:flex; justify-content:space-between; align-items:center }
+.pill{ background:#eef2ff; color:#3730a3; padding:6px 10px; border-radius:999px; font-weight:700 }
+.question{ font-size:18px; margin:12px 0 8px }
+.options{ display:grid; gap:8px }
+.options label{ display:flex; gap:10px; align-items:center; background:#f8fafc; border:1px solid #e2e8f0; padding:10px 12px; border-radius:12px; cursor:pointer }
+.options input{ transform: scale(1.1) }
+
+/* Footer */
+.hq-footer{ text-align:center; color:#fff; padding:24px 12px; opacity:.95 }
+
+/* Responsive */
+@media (max-width:640px){ .q-form .grid-2{ grid-template-columns:1fr } }
+

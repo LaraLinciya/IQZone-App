@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQZone  — Student</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topbar">
+    <a href="index.html" class="brand-mini">IQZone ⚡</a>
+    <div class="crumbs">Role: <strong>Student</strong></div>
+  </nav>
+
+  <main class="wrap">
+    <section class="panel">
+      <h2>Pick a Domain</h2>
+      <div id="domainCards" class="cards"></div>
+    </section>
+
+    <section id="quizArea" class="panel" style="display:none;">
+      <div class="quiz-head">
+        <h2 id="quizDomain">Quiz</h2>
+        <div class="pill"><span id="qIndex">1</span>/<span id="qTotal">0</span></div>
+      </div>
+
+      <div class="question">
+        <p id="quizQuestion">Question text</p>
+      </div>
+      <div id="options" class="options"></div>
+
+      <div class="actions">
+        <button class="btn" id="nextBtn">Next</button>
+      </div>
+    </section>
+
+    <section id="result" class="panel" style="display:none;"></section>
+  </main>
+
+  <footer class="hq-footer">Good luck! Aim for 100% 🔥</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+<!-- =============================
+ File: splash.html (Splash screen)
+============================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IQZone — Loading</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(120deg, var(--bg1), var(--bg2));
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+    }
+    .splash-content {
+      animation: fadeIn 2s ease-in-out;
+    }
+    .splash-content h1 {
+      font-size: 48px;
+      margin: 0;
+      text-shadow: 0 6px 24px rgba(0,0,0,.25);
+    }
+    .splash-content p {
+      margin-top: 12px;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-content">
+    <h1>IQZone ⚡</h1>
+    <p>Learn smarter. Play faster. Score higher.</p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 3000); // Redirect after 3 seconds
+  </script>
+</body>
+</html>
